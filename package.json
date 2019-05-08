@@ -1,0 +1,24 @@
+{
+  "name": "efeelaiho",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/efeelaiho/efeelaiho.git",
+  "author": "efe elaiho <efeelaiho15@utexas.edu>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "bulma": "^0.7.4",
+    "classnames": "^2.2.6",
+    "express": "^4.16.4",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typed.js": "^2.0.10"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
