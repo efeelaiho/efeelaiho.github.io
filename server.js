@@ -26,15 +26,6 @@ app.prepare()
   server.use(wwwRedirect);
 
   server.get('/efe_elaiho_resume.pdf', (req, res) => {
-    /*
-    var file = fs.createReadStream('./static/efe_elaiho_resume.pdf');
-    var data = fs.readFileSync('./static/efe_elaiho_resume.pdf');
-    var stat = fs.statSync('./static/efe_elaiho_resume.pdf');
-    res.setHeader('Content-Length', stat.size);
-    res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', 'attachment; filename=efe_elaiho_resume.pdf');
-    res.send(data); */
-
     var data = fs.readFileSync('./static/efe_elaiho_resume.pdf');
     res.contentType("application/pdf");
     res.send(data);
