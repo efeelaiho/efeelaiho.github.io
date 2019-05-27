@@ -38,7 +38,7 @@ class Home extends React.Component {
 
             <div>
                 <Head>
-                <title> Efe Elaiho </title>
+                <title> Efé Elaiho </title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous"></link>
                 <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Work+Sans" rel="stylesheet"></link>
@@ -48,7 +48,11 @@ class Home extends React.Component {
                         <div className="container"> 
                             <div className="columns">
                                 <div className="column is-three-fifths">
-                                        <h1 className="title is-2">
+
+                                <figure className="image is-128x128" style={{marginBottom: '4em'}}>
+                                    <img className="is-rounded" src="https://avatars2.githubusercontent.com/u/8105085?s=460&v=4"/>
+                                </figure>
+                                        <h1 className="title is-2" style={{color: '#000000'}}>
                                         Efé Elaiho - <span id="iam"></span>
                                         </h1><br/><br/>
                                     
@@ -61,18 +65,14 @@ class Home extends React.Component {
                                         Prior, I attended The University of Texas at Austin where I majored in Computer Science, with a minor in Business Administration.
                                     </p>
                                     <br/><br/>
-                                    <div className="window">
-                                        <div>
-                                            <div className="circle terminal-red"></div>
-                                            <div className="circle terminal-yellow"></div>
-                                            <div className="circle terminal-green"></div>
-                                            <div className="text_container">
-                                            <span className="blue">エフォサ elaiho@code</span>:~$ curl -X GET "https://efeelaiho.com/sociallinks" <br/>
-                                            {"{ \"twitter\": \"mytwitter\",  \"linkedin\": \"mylinkedin\", \"github\": \"mygithub\"} "} <br/>
-                                            <span className="blue">エフォサ elaiho@code</span>:~$ curl -X GET "https://efeelaiho.com/funfacts"
-                                            </div>
-                                        </div>
+                                    <div>
+                                    <a href="https://www.linkedin.com/in/efeelaiho/" target="_blank"><i className="fab fa-linkedin-in " style={{marginRight: '1em'}}><span className="f"> - LinkedIn </span></i></a>
+                                    <a href="https://github.com/efeelaiho" target="_blank"><i className="fab fa-github " style={{margin: '1em'}}><span className="f"> - GitHub </span></i></a>
+                                    <a href="mailto:efeelaiho15@utexas.edu"><i className="far fa-envelope " style={{margin: '1em'}}><span className="f"> - Email </span></i></a>
+                                    <a href="/efe_elaiho_resume.pdf" target="_blank"><i className="far fa-file " style={{margin: '1em'}}><span className="f"> - Resume </span></i></a>
+                                   
                                     </div>
+                                    
                                 </div>
                             </div>               
                         </div>
@@ -84,38 +84,30 @@ class Home extends React.Component {
                          color: #d9534f
                      }
 
+                     section {}
+                     
+                     
                      p {
                         font-family: 'Work Sans', sans-serif;
                         #font-family: 'Titillium Web', sans-serif;
                         color: black;
-                        font-size: 16px
+                        font-size: 16px;
+                        
+                     }
+
+                     .f {
+                        font-family: 'Work Sans', sans-serif; 
+                        font-size: 14px
                      }
 
                      h1 {
                         font-family: 'Titillium Web', sans-serif;
-                        font-size: 14px
+                        font-size: 18px
                      }
 
-                    .terminal-red {
-                         background: red;
-                     }
-
-                    .terminal-yellow {
-                        background: #d8d813;
-                    }
-
-                    .terminal-green {
-                        background: green;
-                    }
                     
-                    .window {
-                        width: 100%;
-                        height: 337px;
-                        margin-left: auto;
-                        margin-right: auto;
-                        border-radius: 4px;
-                        background: #000000;
-                        box-shadow: 0px 2px 0px 0px #E5E5E5;
+                    a {
+                        color: #4a4a4a;
                     }
 
                     .flex {
@@ -127,48 +119,7 @@ class Home extends React.Component {
                         -webkit-justify-content: space-between;
                     }
 
-                    .circle {
-                        width: 12px;
-                        height: 12px;
-                        border-radius: 8px;
-                        display: inline-block;
-                        margin: 5px;
-                    }
-
-                    .text_container {
-                        margin: 6px;
-                        padding: 12px 18px 15px 18px;
-                        
-                        
-                        background: black;
-                        
-                        font: 600 .8em "Source Code Pro", monospace;
-                        color: #fff;
-                        padding-top: 19px;
-                        width: 100% - 50px;
-                        height: 290px;
-                        line-height: 1.7em;
-                        letter-spacing: -0.31px;
-                      }
-
-                    .window p {
-                        display: block;
-                        margin: 0;
-                      }
-                      
-                      .blue {
-                        color: #2261E8;
-                      }
-                      .black {
-                        color: #222;
-                      }
-                      .muted {
-                        color: #6C819A;
-                      }
-                      .ione { margin-left: 20px; }
-                      .itwo { margin-left: 40px; }
-                      .ithree { margin-left: 60px; }
-                      
+                    
 
 
                     `}
