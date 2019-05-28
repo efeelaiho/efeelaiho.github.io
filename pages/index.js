@@ -22,8 +22,6 @@ class Home extends React.Component {
       };
       // this.el refers to the <span> in the render() method
       this.typed = new Typed("#iam", options);
-
-      this.d = Date(Date.now()).toString();
     }
 
     componentWillUnmount() {
@@ -40,6 +38,7 @@ class Home extends React.Component {
                 <Head>
                 <title> Efé Elaiho </title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <link rel="icon" sizes="32x32" href="../static/favicon.ico"></link>
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossOrigin="anonymous"></link>
                 <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Work+Sans" rel="stylesheet"></link>
                 </Head>

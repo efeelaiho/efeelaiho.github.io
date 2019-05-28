@@ -7,6 +7,7 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
+
 function wwwRedirect(req, res, next) {
   if (req.headers.host.slice(0, 4) === 'www.') {
       var newHost = req.headers.host.slice(4);
@@ -35,9 +36,9 @@ app.prepare()
     return handle(req, res);
   });
 
-  server.listen(3000, (err) => {
+  server.listen(8080, (err) => {
     if (err) throw err
-    console.log('> Ready on http://localhost:3000');
+    console.log('> Ready on http://localhost:8080');
   });
 })
 .catch((ex) => {

@@ -1,11 +1,11 @@
 {
   "name": "efeelaiho",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/efeelaiho/efeelaiho.git",
   "author": "efe elaiho <efeelaiho15@utexas.edu>",
   "license": "MIT",
   "private": true,
+  "devDependencies": {},
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "bulma": "^0.7.4",
@@ -18,9 +18,12 @@
     "typed.js": "^2.0.10"
   },
   "scripts": {
-    "dev": "NODE_ENV=development node server.js",
+    "dev": "NODE_ENV=development && node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "export": "next export"
+    "start": "NODE_ENV=production && node server.js",
+    "deploy": "npm run build && gcloud app deploy"
+  },
+  "engines": {
+    "node": "10.x.x"
   }
 }
