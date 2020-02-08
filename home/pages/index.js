@@ -15,7 +15,7 @@ class Home extends React.Component {
 
       // You can pass other options here, such as typing speed, back speed, etc.
       const options = {
-        strings: ["a software engineer", "an ML/AI enthusiast", "a technologist", "a sushi eating monster &#x1F363;"],
+        strings: ["a software engineer", "a machine learning enthusiast", "a technologist", "a sushi eating monster &#x1F363;"],
         typeSpeed: 50,
         backSpeed: 40,
         loop: true
@@ -55,12 +55,11 @@ class Home extends React.Component {
                                         Efé Elaiho - <span id="iam"></span>
                                         </h1><br/><br/>
                                     
-                                    <p> I'm a man in sync with technology, who builds and designs products in many sectors, but mostly targeting health and education technology.  
-                                        I am currently working as a software engineer at IBM Watson in performance.
+                                    <p> I'm a man in sync with technology. I am currently working as a software engineer at IBM Watson in performance.
                                         Some projects that I'm currently working on are <a className="ucardia" href="https://ucardia.com" target="_blank" >Ucardia</a>, a post cardiac rehabilitation consumer product, and Groopium, a group project management tool for the classroom.
                                         In my spare time I like to lift heavy weights and put them back down, and travel.</p> <br/><br/>
 
-                                    <p>I am currently finishing up my Masters of Science in Computer Science at Georgia Institute of Technology with a specialization in Interactive Intelligence.
+                                    <p>I obtained my Masters of Science in Computer Science at Georgia Institute of Technology with a specialization in Interactive Intelligence.
                                         Prior, I attended The University of Texas at Austin where I majored in Computer Science, with a minor in Business Administration.
                                     </p>
                                     <br/><br/>
